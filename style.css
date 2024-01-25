@@ -1,0 +1,193 @@
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/* open sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.bg-banner {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+}
+
+.container {
+  position: absolute;
+  top: 9rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.container .bg-hero img {
+  width: 900px;
+  height: auto;
+}
+
+.container .hero-body .hero-title {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container .hero-body .hero-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container .hero-body .hero-description button {
+  width: 200px;
+  font-size: 18px;
+  background-color: white;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.container .hero-body .hero-description button:hover {
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+}
+
+.footer .footer-social {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-social:hover {
+  border: 1px solid hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+.footer .footer-social ion-icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .container .bg-hero img {
+    width: 800px;
+    height: auto;
+  }
+
+  .container .hero-body .hero-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .container .hero-body .hero-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    top: 9rem;
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container .bg-hero img {
+    width: 650px;
+    height: auto;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: -200px;
+    right: 280px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container .bg-hero img {
+    width: 290px;
+    height: auto;
+  }
+
+  .container .hero-body .hero-title {
+    font-size: 20px;
+  }
+
+  .container .hero-body .hero-description p {
+    font-size: 15px;
+  }
+
+  .container .hero-body .hero-description button {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
